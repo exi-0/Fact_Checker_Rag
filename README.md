@@ -1,4 +1,4 @@
-Financial News Fact-Checker
+inancial News Fact-Checker
 This project is a financial fact-checking system that leverages natural language processing, semantic search, and large language models to determine whether financial news claims are true, false, or unverifiable. It uses a curated set of trusted facts and compares new claims against them using a combination of sentence embeddings, vector search (Pinecone), and OpenAI's language models.
 
 Features
@@ -22,83 +22,24 @@ Pinecone
 OpenAI
 
 NVIDIA GPU (optional but recommended for faster embedding and classification)
-
-Installation
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/financial-fact-checker.git
-cd financial-fact-checker
-Create a virtual environment and activate it
-
-bash
-Copy
-Edit
+**Installation**
+1)Clone the repository
+2)Create a virtual environment and activate it
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
+3)pip install -r requirements.txt
 Set up environment variables
-
-Create a .env file with the following keys:
-
-ini
-Copy
-Edit
+4)Create a .env file with the following keys:
 PINECONE_API_KEY=your_pinecone_api_key
 OPENAI_API_KEY=your_openai_api_key
-Usage
+**Usage**
 The script initializes a trusted fact database, embeds and indexes the facts in Pinecone, and uses OpenAI GPT to analyze new claims.
 
-To run the system:
-
-bash
-Copy
-Edit
+**To run the system:**
 python main.py
-This will:
 
-Load the Indian Financial News dataset
-
-Initialize sentence transformer and zero-shot classifier
-
-Create or reset the Pinecone index
-
-Embed and index the trusted facts
-
-Run fact-checking on a set of sample claims
-
-Each claim is evaluated and classified as one of the following:
-
-True: Fully supported by verified facts
-
-False: Contradicted by verified facts
-
-Unverifiable: No strong evidence found
-
-Sample Output
-rust
-Copy
-Edit
-Fact-checking: Fitch Solutions has reduced India's economic growth forecast...
-
-Extracted claim: Fitch Solutions has reduced India's economic growth forecast...
-Retrieved 3 relevant facts
-Fact-check Result:
-{
-  "original_text": "...",
-  "extracted_claim": "...",
-  "verdict": "True",
-  "evidence": [...],
-  "reasoning": "..."
-}
-Project Structure
+**Project Structure**
 main.py – Core script for data ingestion, processing, and fact-checking
 
 requirements.txt – List of dependencies
