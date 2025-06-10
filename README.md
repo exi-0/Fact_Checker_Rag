@@ -38,7 +38,7 @@ Clone the repository
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/financial-fact-checker.git
+git clone https://github.com/exi-0/Fact_Checker_Rag.git
 cd financial-fact-checker
 Create a virtual environment and activate it
 
