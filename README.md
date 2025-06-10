@@ -12,9 +12,16 @@ Evaluates claims as True, False, or Unverifiable
 
 Uses a curated dataset of trusted financial statements
 
+pine cone :
+
 ![Screenshot 2025-06-10 224324](https://github.com/user-attachments/assets/5608dc3a-fe13-4e1c-b789-d02ceb3a85b8)
+Streamlit :
 ![Screenshot 2025-06-10 230536](https://github.com/user-attachments/assets/24a736ac-a51f-45d9-831d-575f56c5275f)
+NLP:
 ![Screenshot 2025-06-10 224330](https://github.com/user-attachments/assets/f57d0485-bb8f-4bb0-9133-be51190a4165)
+Input : ![image](https://github.com/user-attachments/assets/b20094a9-1048-4407-9f28-a091b19f2e97)
+
+Output:
 ![image](https://github.com/user-attachments/assets/a4c27f9a-d1c1-4597-b48c-011a3b3b36f5)
 
 
