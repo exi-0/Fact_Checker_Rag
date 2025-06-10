@@ -1,6 +1,6 @@
 Financial News Fact-Checker
 This project is a financial fact-checking system that leverages natural language processing, semantic search, and large language models to determine whether financial news claims are true, false, or unverifiable. It uses a curated set of trusted facts and compares new claims against them using a combination of sentence embeddings, vector search (Pinecone), and OpenAI's language models.
-video : 
+
 Features
 Claim extraction using zero-shot classification (facebook/bart-large-mnli)
 
@@ -22,27 +22,54 @@ Pinecone
 OpenAI
 
 NVIDIA GPU (optional but recommended for faster embedding and classification)
-**Installation**
-1)Clone the repository
-2)Create a virtual environment and activate it
+
+Installation
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/financial-fact-checker.git
+cd financial-fact-checker
+Create a virtual environment and activate it
+
+bash
+Copy
+Edit
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install dependencies
-3)pip install -r requirements.txt
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
 Set up environment variables
-4)Create a .env file with the following keys:
+
+Create a .env file with the following keys:
+
+ini
+Copy
+Edit
 PINECONE_API_KEY=your_pinecone_api_key
 OPENAI_API_KEY=your_openai_api_key
-**Usage**
+Usage
 The script initializes a trusted fact database, embeds and indexes the facts in Pinecone, and uses OpenAI GPT to analyze new claims.
 
-**To run the system:**
+To run the system:
+
+bash
+Copy
+Edit
 python main.py
+This will:
 
-**Project Structure**
-main.py – Core script for data ingestion, processing, and fact-checking
+Load the Indian Financial News dataset
 
-requirements.txt – List of dependencies
+Initialize sentence transformer and zero-shot classifier
 
-.env – Environment variables for API keys (not committed)
+Create or reset the Pinecone index
 
+Embed and index the trusted facts
+
+Run fact-checking on a set of sample claims
