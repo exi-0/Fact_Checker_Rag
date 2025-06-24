@@ -1,6 +1,8 @@
-News Fact-Checker
+**News Fact-Checker**
 This project is a financial fact-checking system that leverages natural language processing, semantic search, and large language models to determine whether financial news claims are true, false, or unverifiable. It uses a curated set of trusted facts and compares new claims against them using a combination of sentence embeddings, vector search (Pinecone), and OpenAI's language models.
 
+**Video**
+Link: https://drive.google.com/file/d/10scizHyx-GqJNxp7OQoBhqkAf-pSWzgz/view?usp=drive_link
 Features
 Claim extraction using zero-shot classification (facebook/bart-large-mnli)
 
